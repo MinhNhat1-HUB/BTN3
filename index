@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phân tích Case Study UPS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(55, 65, 81, 0.8), rgba(17, 24, 39, 0.9)), url('https://about.ups.com/content/dam/upsstories/images/our-stories/innovation-driven/how-ups-is-helping-customers-with-sustainable-logistics/1920x1080-NYC-EV-1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .section-bg-2 {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1787289434954-795edf0255b7?fm=jpg&q=60&w=3000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .section-bg-3 {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('https://velexp.com/static/frontend/imgs/blogs/sorting-centers-main-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .ups-brown { color: #351C15; }
+        .bg-ups-brown { background-color: #351C15; }
+        .ups-gold { color: #FFB500; }
+        .bg-ups-gold { background-color: #FFB500; }
+    </style>
+</head>
+<body class="text-gray-800 antialiased leading-relaxed">
+
+    <!-- Hero Section -->
+    <header class="hero-bg text-white min-h-screen flex flex-col justify-center items-center text-center p-6">
+        <div class="max-w-4xl mx-auto animate-fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight text-white uppercase drop-shadow-lg">
+                Phân tích Hệ thống thông tin<br><span class="ups-gold">& Chiến lược của UPS</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-10 text-gray-200">
+                Lợi thế cạnh tranh từ việc tối ưu hóa dữ liệu và làm chủ chuỗi cung ứng toàn cầu.
+            </p>
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 inline-block border border-white/20 shadow-2xl">
+                <p class="font-semibold text-ups-gold mb-2 uppercase tracking-wider text-sm">Thực hiện bởi Nhóm Minh Nhật</p>
+                <p class="text-gray-100 text-sm md:text-base">
+                    Võ Lê Minh Nhật (Nhóm trưởng) • Phùng Nguyễn Đăng Khoa<br>
+                    Lâm Mỹ Đào • Tăng Phương Hằng • Nguyễn Đoàn Hữu Huy
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold ups-brown mb-4 uppercase">Tổng quan</h2>
+                <p class="text-xl text-gray-500">Mạng Lưới Logistics Tích Hợp Toàn Cầu</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="p-8 bg-gray-50 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
+                    <div class="text-5xl font-black text-amber-500 mb-4">13.6T</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Bưu kiện</h3>
+                    <p class="text-gray-600">Xử lý mỗi ngày, bao gồm cả tài liệu.</p>
+                </div>
+                <div class="p-8 bg-gray-50 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
+                    <div class="text-5xl font-black text-amber-500 mb-4">88,000+</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Phương tiện</h3>
+                    <p class="text-gray-600">Vận tải trên bộ, phủ sóng rộng khắp.</p>
+                </div>
+                <div class="p-8 bg-gray-50 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
+                    <div class="text-5xl font-black text-amber-500 mb-4">600</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Máy bay</h3>
+                    <p class="text-gray-600">Chở hàng hoạt động liên tục toàn cầu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Porter & Strategy Section -->
+    <section class="py-20 section-bg-2">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Porter -->
+                <div>
+                    <h2 class="text-3xl font-bold ups-brown mb-8 uppercase border-b-4 border-amber-500 inline-block pb-2">Mô hình Porter</h2>
+                    <p class="text-lg text-gray-600 mb-6 font-medium">Áp Lực Cạnh Tranh Ngành Hậu Cần</p>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-amber-500">
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">Đối Thủ Trực Tiếp</h4>
+                            <p class="text-gray-600">FedEx chiếm ưu thế qua đêm. DHL dẫn đầu quốc tế.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-amber-500">
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">Chi Phí Đầu Vào</h4>
+                            <p class="text-gray-600">Áp lực khổng lồ từ biến động giá nhiên liệu toàn cầu.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-amber-500">
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">Chạy Đua Công Nghệ</h4>
+                            <p class="text-gray-600">Đối thủ sao chép nhanh chóng các hệ thống tracking hiện tại.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy -->
+                <div>
+                    <h2 class="text-3xl font-bold ups-brown mb-8 uppercase border-b-4 border-amber-500 inline-block pb-2">Định Hướng Phát Triển</h2>
+                    <p class="text-lg text-gray-600 mb-6 font-medium">Hai Trụ Cột Chiến Lược</p>
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-md mb-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mr-3">1</span>
+                            Dẫn Đầu Về Chi Phí
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 ml-2">
+                            <li>Cắt giảm chi phí vận hành cốt lõi.</li>
+                            <li>Tối ưu hóa hiệu suất bốc xếp hàng hóa.</li>
+                            <li>Tiết kiệm nhiên liệu thông qua phân tích lộ trình.</li>
+                            <li>Kìm hãm đà tăng giá dịch vụ bưu kiện.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-md">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mr-3">2</span>
+                            Tích Hợp Chuỗi Cung Ứng
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 ml-2">
+                            <li>Cung cấp giải pháp logistics toàn diện.</li>
+                            <li>Quản lý luồng hàng hóa, thông tin và tài chính.</li>
+                            <li>Mở rộng chiến lược "thương mại phối hợp".</li>
+                            <li>Ví dụ: Quản trị mạng lưới 4.500 đại lý cho DaimlerChrysler.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Chain -->
+    <section class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto px-6 max-w-5xl text-center">
+            <h2 class="text-3xl font-bold ups-brown mb-4 uppercase">Tích Hợp Chuỗi Giá Trị</h2>
+            <p class="text-lg text-gray-600 mb-12">Nền tảng hỗ trợ cốt lõi: <strong>Công Nghệ (IT)</strong> - Kết nối toàn bộ chuỗi thông qua mã vạch, mạng không dây và hệ thống hỗ trợ ra quyết định (DSS).</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow border border-gray-100">
+                    <div class="text-4xl font-black text-gray-200 mb-4">01</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Đầu Vào</h3>
+                    <p class="text-gray-600">Số hóa dữ liệu 93% bưu kiện ngay tại nguồn.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow border border-gray-100 transform md:-translate-y-4">
+                    <div class="text-4xl font-black text-gray-200 mb-4">02</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Vận Hành</h3>
+                    <p class="text-gray-600">Tối ưu hóa hàng nghìn tỷ phương án định tuyến.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow border border-gray-100">
+                    <div class="text-4xl font-black text-gray-200 mb-4">03</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Đầu Ra</h3>
+                    <p class="text-gray-600">Mạng lưới tích hợp đường bộ và hàng không.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DSS Section (Dark) -->
+    <section class="py-24 section-bg-3 text-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 uppercase tracking-wide">Hệ Thống Phân Tích Ra Quyết Định (DSS)</h2>
+                <p class="text-xl text-gray-300 font-light">Công cụ cốt lõi biến dữ liệu khổng lồ thành hiệu quả vận hành thực tế.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="bg-black/50 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+                    <h3 class="text-amber-500 text-2xl font-bold mb-4">Sự Phức Tạp Của Mạng Lưới</h3>
+                    <div class="text-5xl font-black text-white mb-4">15.5 Tỷ</div>
+                    <p class="text-lg text-gray-300 font-semibold mb-2">Phương án tuyến đường khả dĩ</p>
+                    <p class="text-gray-400">Chỉ với 25 điểm giao hàng. Việc tính toán thủ công hoàn toàn bất khả thi đối với quy mô giao hàng hiện tại của UPS.</p>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:bg-white/20 transition">
+                        <h4 class="text-xl font-bold text-white mb-2">Hệ thống Volcano</h4>
+                        <p class="text-gray-300">Tối ưu hóa toàn diện mạng lưới, lộ trình bay và lịch trình phi công hàng không.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:bg-white/20 transition">
+                        <h4 class="text-xl font-bold text-white mb-2">Client/Server DSS</h4>
+                        <p class="text-gray-300">Phân tích dữ liệu bưu kiện để quyết định mạng lưới điều độ trên bộ tốt nhất.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-ups-brown rounded-2xl p-8 md:p-12 shadow-2xl border border-amber-900/30">
+                <h3 class="text-2xl font-bold text-center mb-10 text-ups-gold uppercase tracking-wider">Kết Quả Triển Khai Hệ Thống DSS</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-3xl md:text-4xl font-bold text-white mb-2">-100M</div>
+                        <div class="text-sm text-gray-400 uppercase tracking-wide">Dặm Di Chuyển</div>
+                        <p class="text-xs text-gray-500 mt-2">Khoảng cách cắt giảm mỗi năm</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl md:text-4xl font-bold text-white mb-2">-14M</div>
+                        <div class="text-sm text-gray-400 uppercase tracking-wide">Gallon Nhiên Liệu</div>
+                        <p class="text-xs text-gray-500 mt-2">Khối lượng xăng dầu tiết kiệm</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl md:text-4xl font-bold text-white mb-2">8%</div>
+                        <div class="text-sm text-gray-400 uppercase tracking-wide">Tỷ Lệ Lỗi</div>
+                        <p class="text-xs text-gray-500 mt-2">Giảm mạnh từ mức 45% trước đây</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl md:text-4xl font-bold text-white mb-2">-1 Ngày</div>
+                        <div class="text-sm text-gray-400 uppercase tracking-wide">Thời Gian Giao</div>
+                        <p class="text-xs text-gray-500 mt-2">Rút ngắn thời gian cam kết</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Advantage -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="w-full md:w-1/2">
+                    <img src="https://api-rise.hku.hk/media/bgfpydg5/p13.png?v=1dc6f769f86ade0" alt="Supply Chain Dashboard" class="rounded-2xl shadow-xl w-full object-cover">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold ups-brown mb-8 uppercase">Lợi Thế Cạnh Tranh Từ Dữ Liệu</h2>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1 mr-4 text-amber-500">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-800">Kiểm Soát Chi Phí</h4>
+                                <p class="text-gray-600">Giảm 600 triệu USD chi phí điều hành hằng năm.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1 mr-4 text-amber-500">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-800">Tối Ưu Năng Suất</h4>
+                                <p class="text-gray-600">Tăng số điểm giao hàng lên 145 điểm mỗi ngày/tài xế.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1 mr-4 text-amber-500">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-800">Hoạch Định Vĩ Mô</h4>
+                                <p class="text-gray-600">Lựa chọn chính xác vị trí xây dựng trung tâm phân phối.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Conclusion -->
+    <footer class="bg-ups-brown text-white py-12 text-center border-t-4 border-amber-500">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl md:text-4xl font-light italic mb-8">"Phục vụ tốt nhất, giá cả thấp nhất."</h2>
+            <div class="text-ups-gold text-4xl font-bold mb-6">Q&A</div>
+            <p class="text-gray-400">Cảm ơn quý vị đã theo dõi.</p>
+            <p class="text-gray-500 text-sm mt-8 opacity-50">© Phân tích Case Study UPS - Nhóm Minh Nhật</p>
+        </div>
+    </footer>
+
+</body>
+</html>
